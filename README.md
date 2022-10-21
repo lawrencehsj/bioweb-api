@@ -5,6 +5,7 @@ A RESTFUL web service built using django models. The dataset is a mock set of pr
 
 The API views are set up using Django Rest Framework (DRF). Serializers objects are created corresponding to each django model, with a few additional serializers that cater for unique API views. The views are mainly built using function based views (@api_view([method_names]). These views are then linked with a url for the browser to render the page.
 
+### Features
 There are a total of 6 endpoints:
 1. POST http://127.0.0.1:8000/api/protein/ - add a new record
 2. GET http://127.0.0.1:8000/api/protein/[PROTEIN ID] - return the protein sequence and all we know about it
@@ -19,6 +20,11 @@ Example API view of ENDPOINT (2):
 
 A series of unit tests using DjangoModelFactory and APITestCase packages to ensure the successful creations/populations of objects and routes.
 
+
+### Built With
+* Django
+* sqlite
+
 # Running the project
 * `django-admin startproject bioweb`
 * `cd bioweb`
@@ -31,3 +37,32 @@ A series of unit tests using DjangoModelFactory and APITestCase packages to ensu
 ### To run the data loading script: 
 * cd to bioweb/proteins directory and enter the command: 
 * `python scripts/load_data.py`
+
+## Getting Started
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+Initialize the project in the Django environment through a series of commands that automatically creates the set of packages and files required to construct the app:
+
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the django environment
+   ```sh
+   django-admin startproject bioweb 
+   cd bioweb
+   python manage.py startapp proteins
+   ```
+
