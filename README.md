@@ -3,7 +3,7 @@ A RESTFUL web service built using django models. The dataset is a mock set of pr
 
 
 ## Initialize project
-`django-admin startproject bioweb
+* `django-admin startproject bioweb`
 * cd bioweb
 * python manage.py startapp proteins
 
