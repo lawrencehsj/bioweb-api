@@ -66,5 +66,3 @@ To run the unit tests:
 cd bioweb
 python manage.py test
 ```
-
-
