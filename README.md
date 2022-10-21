@@ -25,6 +25,7 @@ A series of unit tests using DjangoModelFactory and APITestCase packages to ensu
 * Django
 * sqlite
 
+<br>
 
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
@@ -41,7 +42,7 @@ Initialize the project in the Django environment through a series of commands th
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone [https://github.com/your_username_/Project-Name.git](https://github.com/lawrencehsj/bioweb-api.git)
    ```
 2. Install NPM packages
    ```sh
