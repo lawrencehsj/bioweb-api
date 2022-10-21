@@ -1,7 +1,5 @@
 # bioweb-api
-A RESTFUL web service built using django models. The dataset is a mock set of protein domains data in csv format. Database built using SQLite3.
-
-This project explores the django serializations and modelling cretaing appropriate relations with the various attributes present in the dataset. Upon creation of the models, data will be inserted them through a script 'load_data.py'. 
+A RESTFUL web service built using django models. The dataset is a mock set of protein domains data in csv format. Database built using SQLite3. This project explores the django serializations and modelling cretaing appropriate relations with the various attributes present in the dataset. Upon creation of the models, data will be inserted them through a script 'load_data.py'. 
 
 The API views are set up using Django Rest Framework (DRF). Serializers objects are created corresponding to each django model, with a few additional serializers that cater for unique API views. The views are mainly built using function based views (@api_view([method_names]). These views are then linked with a url for the browser to render the page.
 
@@ -13,6 +11,8 @@ There are a total of 6 endpoints:
 5. GET http://127.0.0.1:8000/api/pfams/[TAXA ID] - return a list of all domains in all the proteins for a given organism.
 6. GET http://127.0.0.1:8000/api/coverage/[PROTEIN ID] - return the domain coverage for a given protein
 
+API view of ENDPOINT (2):
+     
 A series of unit tests using DjangoModelFactory and APITestCase packages to ensure the successful creations/populations of objects and routes.
 
 ## Initialize project
