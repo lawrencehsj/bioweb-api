@@ -13,9 +13,9 @@ There are a total of 6 endpoints:
 5. GET http://127.0.0.1:8000/api/pfams/[TAXA ID] - return a list of all domains in all the proteins for a given organism.
 6. GET http://127.0.0.1:8000/api/coverage/[PROTEIN ID] - return the domain coverage for a given protein
 
-API view of ENDPOINT (2):
+Example API view of ENDPOINT (2):
 
-<img width="452" alt="endpoint2" src="https://user-images.githubusercontent.com/58553029/197093496-4f4ddda7-e7ed-4efd-b0f4-91415a6e235c.png">
+![image](https://user-images.githubusercontent.com/58553029/197093496-4f4ddda7-e7ed-4efd-b0f4-91415a6e235c.png)
 
 A series of unit tests using DjangoModelFactory and APITestCase packages to ensure the successful creations/populations of objects and routes.
 
