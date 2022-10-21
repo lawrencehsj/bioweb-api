@@ -1,0 +1,13 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Law Proteins List</h1>
+        <table>
+            <tr><th>Protein ID</th></tr>
+            <!-- list out all proteins -->
+            {% for protein in proteins %}
+            <tr><td><a href="/api/protein/{{ protein.protein_id }}">{{ protein }}</a></td></tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
