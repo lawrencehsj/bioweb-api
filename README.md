@@ -1,5 +1,3 @@
-# bioweb-api
-
 # About the project
 A RESTFUL web service built using django models. The dataset is a mock set of protein domains data in csv format. Database built using SQLite3. This project explores the django serializations and modelling cretaing appropriate relations with the various attributes present in the dataset. Upon creation of the models, data will be inserted them through a script 'load_data.py'. 
 
@@ -25,7 +23,6 @@ A series of unit tests using DjangoModelFactory and APITestCase packages to ensu
 * Django
 * sqlite
 
-<br>
 
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
