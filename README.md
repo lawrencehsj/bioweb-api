@@ -25,18 +25,6 @@ A series of unit tests using DjangoModelFactory and APITestCase packages to ensu
 * Django
 * sqlite
 
-# Running the project
-* `django-admin startproject bioweb`
-* `cd bioweb`
-* `python manage.py startapp proteins`
-
-### To run tests:
-* cd to bioweb directory and enter the command: 
-* `python manage.py test`
-
-### To run the data loading script: 
-* cd to bioweb/proteins directory and enter the command: 
-* `python scripts/load_data.py`
 
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
@@ -51,18 +39,31 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 Initialize the project in the Django environment through a series of commands that automatically creates the set of packages and files required to construct the app:
 
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Start the django environment
+3. Start the django environment
    ```sh
    django-admin startproject bioweb 
    cd bioweb
    python manage.py startapp proteins
    ```
+   
+To run the script to populate the django models using the mock set of data:
+```sh
+cd bioweb/proteins
+python scripts/load_data.py
+```
+
+To run the unit tests:
+```sh
+cd bioweb
+python manage.py test
+```
+
 
